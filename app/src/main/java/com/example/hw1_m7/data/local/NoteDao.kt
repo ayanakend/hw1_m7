@@ -9,7 +9,6 @@ import com.example.hw1_m7.data.model.NoteEntity
 
 @Dao
 interface NoteDao {
-
     @Insert
     suspend fun createNote(noteEntity: NoteEntity)
 

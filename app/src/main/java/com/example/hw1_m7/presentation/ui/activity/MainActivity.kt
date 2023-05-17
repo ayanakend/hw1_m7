@@ -1,4 +1,4 @@
-package com.example.hw1_m7.presentation
+package com.example.hw1_m7.presentation.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
