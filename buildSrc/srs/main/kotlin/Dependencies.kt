@@ -1,4 +1,4 @@
-object Versions {
+object Version {
     const val AGP = "8.0.0"
     const val kotlin = "1.8.10"
     const val hilt = "2.44.2"
@@ -57,7 +57,7 @@ object Deps {
         const val runtime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
     }
 
-    object Plugins {
+    object Plugin {
         object AGP {
             const val application = "com.android.application"
             const val library = "com.android.library"

@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "hw1_m7"
-include (":app")
+include(":app")

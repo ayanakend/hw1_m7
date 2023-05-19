@@ -1,8 +1,8 @@
 plugins {
-    id (Plugins.AGP.application);
-    id (Plugins.Kotlin.android);
-    id (Plugins.Kotlin.kapt);
-    id (Plugins.DaggerHilt.hilt);
+    id(Plugins.AGP.application);
+    id(Plugins.Kotlin.android);
+    id(Plugins.Kotlin.kapt);
+    id(Plugins.DaggerHilt.hilt);
 }
 
 android {
@@ -21,7 +21,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -31,20 +34,20 @@ android {
     kotlinOptions {
         jvmTarget = AppConfig.jvmTarget
     }
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 }
 
 dependencies {//
 
-    implementation (Deps.Ui.core)
-    implementation (Deps.Ui.appcompat)
-    implementation (Deps.Ui.material)
-    implementation (Deps.Ui.constraint)
-    testImplementation (Deps.Ui.junit)
-    androidTestImplementation (Deps.Ui.extJunit)
-    androidTestImplementation (Deps.Ui.espresso)
+    implementation(Deps.Ui.core)
+    implementation(Deps.Ui.appcompat)
+    implementation(Deps.Ui.material)
+    implementation(Deps.Ui.constraint)
+    testImplementation(Deps.Ui.junit)
+    androidTestImplementation(Deps.Ui.extJunit)
+    androidTestImplementation(Deps.Ui.espresso)
 
 
     // Room
@@ -57,19 +60,19 @@ dependencies {//
     implementation(Deps.Coroutines.core)
 
     // Hilt
-    implementation (Deps.DaggerHilt.android)
-    implementation (Deps.DaggerHilt.core)
-    kapt (Deps.DaggerHilt.compiler)
+    implementation(Deps.DaggerHilt.android)
+    implementation(Deps.DaggerHilt.core)
+    kapt(Deps.DaggerHilt.compiler)
 
     //navgraph
 
-    implementation (Deps.NavGraph.fragment)
-    implementation (Deps.NavGraph.ui)
+    implementation(Deps.NavGraph.fragment)
+    implementation(Deps.NavGraph.ui)
 
     // Lifecycle
-    implementation (Deps.Lifecycle.viewModel)
-    implementation (Deps.Lifecycle.runtime)
+    implementation(Deps.Lifecycle.viewModel)
+    implementation(Deps.Lifecycle.runtime)
 
     //Fragment
-    implementation (Deps.Ui.fragment)
+    implementation(Deps.Ui.fragment)
 }
