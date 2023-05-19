@@ -20,15 +20,17 @@ object Versions {
 object Deps {
     object Room {
         const val runtime = "androidx.room:room-runtime:${Versions.room}"
-        const val compiler ="androidx.room:room-compiler:${Versions.room}"
+        const val compiler = "androidx.room:room-compiler:${Versions.room}"
         const val ktx = "androidx.room:room-ktx:${Versions.room}"
     }
-    object DaggerHilt{
+
+    object DaggerHilt {
         const val android = "com.google.dagger:hilt-android:${Versions.hilt}"
-        const val core ="com.google.dagger:hilt-core:${Versions.hilt}"
+        const val core = "com.google.dagger:hilt-core:${Versions.hilt}"
         const val compiler = "com.google.dagger:hilt-compiler:${Versions.hilt}"
     }
-    object Ui{
+
+    object Ui {
         const val core = "androidx.core:core-ktx:${Versions.androidCore}"
         const val appcompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
         const val material = "com.google.android.material:material:${Versions.material}"
@@ -38,14 +40,18 @@ object Deps {
         const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
         const val fragment = "androidx.fragment:fragment-ktx:${Versions.fragment}"
     }
+
     object Coroutines {
-        const val android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
+        const val android =
+            "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
         const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
     }
+
     object NavGraph {
         const val fragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navGraph}"
         const val ui = "androidx.navigation:navigation-ui-ktx:${Versions.navGraph}"
     }
+
     object Lifecycle {
         const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
         const val runtime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
