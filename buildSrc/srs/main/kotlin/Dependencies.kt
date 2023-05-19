@@ -56,20 +56,19 @@ object Deps {
         const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
         const val runtime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
     }
-}
 
-object Plugins {
-    object AGP {
-        const val application = "com.android.application"
-        const val library = "com.android.library"
-    }
+    object Plugins {
+        object AGP {
+            const val application = "com.android.application"
+            const val library = "com.android.library"
+        }
 
-    object Kotlin {
-        const val android = "org.jetbrains.kotlin.android"
-        const val kapt = "kotlin-kapt"
-    }
+        object Kotlin {
+            const val android = "org.jetbrains.kotlin.android"
+            const val kapt = "kotlin-kapt"
+        }
 
-    object DaggerHilt {
-        const val hilt = "com.google.dagger.hilt.android"
+        object DaggerHilt {
+            const val hilt = "com.google.dagger.hilt.android"
+        }
     }
-}
